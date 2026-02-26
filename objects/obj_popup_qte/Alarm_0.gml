@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /// @DnDAction : YoYo Games.Instances.Destroy_Instance
 /// @DnDVersion : 1
 /// @DnDHash : 2E818ED6
@@ -40,3 +41,20 @@ instance_create_layer(150, 980, "QTE", obj_penalties);
 obj_cycle_time.alarm[0] = room_speed * 0.2;
 obj_budi.spd = 1;
 global.popup_open = false;
+=======
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 12DD7524
+/// @DnDInput : 2
+/// @DnDArgument : "expr" "room_speed * 0.2"
+/// @DnDArgument : "expr_1" "1"
+/// @DnDArgument : "var" "obj_cycle_time.alarm[0]"
+/// @DnDArgument : "var_1" "obj_budi.spd"
+obj_cycle_time.alarm[0] = room_speed * 0.2;
+obj_budi.spd = 1;
+
+/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+/// @DnDVersion : 1
+/// @DnDHash : 2E818ED6
+instance_destroy();
+>>>>>>> 6679e719d36d905fbd694b52ed70be941673bbaf
