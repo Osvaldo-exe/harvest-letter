@@ -88,12 +88,8 @@ global.tasks = [
 ]
 
 global.tutor_tasks = [
-<<<<<<< HEAD
 	"Plant the seeds",
 	"Water the plants"
-=======
-	"Plant & water the seed"
->>>>>>> jvn/main
 ];
 
 global.tutorial_index = 0; // current tutorial step

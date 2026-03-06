@@ -1,14 +1,10 @@
-<<<<<<< HEAD
-/// @DnDAction : YoYo Games.Common.Execute_Code
-/// @DnDVersion : 1
-/// @DnDHash : 53275357
-/// @DnDArgument : "code" "if(string_trim(obj_budi.typedWord) == tugas_list[index_sekarang]){$(13_10)	index_sekarang += 1;$(13_10)	$(13_10)		show_debug_message(string("debug message"));$(13_10)	$(13_10)		obj_budi.typedWord = "";$(13_10)	$(13_10)		if(index_sekarang >= array_length(tugas_list)){$(13_10)			global.popup_open = false;$(13_10)			$(13_10)			obj_budi.spd = 1			$(13_10)		$(13_10)			global.carrotseed -= 1;$(13_10)			$(13_10)			var _plant_the_seeds_exists = instance_exists(obj_planttheseeds)$(13_10)			var _water_the_crops_exists = instance_exists(obj_wateryourcrops)$(13_10)			$(13_10)			if(_plant_the_seeds_exists){$(13_10)				obj_planttheseeds.image_index = 1$(13_10)				obj_planttheseeds.alarm[0] = room_speed * 3;$(13_10)			} else if(_water_the_crops_exists) {$(13_10)				obj_wateryourcrops.image_index = 1$(13_10)				obj_wateryourcrops.alarm[0] = room_speed * 3;$(13_10)			}$(13_10)			$(13_10)			$(13_10)			show_popup_grow = true;$(13_10)			$(13_10)			obj_cycle_time.alarm[0] = room_speed * 0.2;$(13_10)			$(13_10)			instance_destroy()$(13_10)			$(13_10)			}$(13_10)	if (obj_budi.typedWord == "water plants") {$(13_10)    if (global.tutorial_index == 1) {$(13_10)$(13_10)        var has_water = false;$(13_10)$(13_10)        with (obj_inventory) {$(13_10)            has_water = inventory_has(obj_water_bucket);$(13_10)        }$(13_10)$(13_10)        if (has_water) {$(13_10)            // Complete task$(13_10)            global.tutorialtasks[1].completed = true;$(13_10)            global.tutorial_index = 2;$(13_10)$(13_10)            // Optional: remove water bucket$(13_10)            with (obj_inventory) {$(13_10)                ds_list_delete(items, ds_list_find_index(items, obj_water_bucket));$(13_10)				show_debug_message("deleted water bucket")$(13_10)            }$(13_10)        } else {$(13_10)            // Feedback$(13_10)            show_message("You need water first!");$(13_10)        }$(13_10)    }$(13_10)}$(13_10)} "
-=======
 var _field = instance_place(obj_budi.x, obj_budi.y, obj_growth)
-if (_field.is_watered) {
-	_field.completed = true;
+if (_field != noone) {
+	if (_field.is_watered) {
+		_field.completed = true;
+	}
 }
->>>>>>> jvn/main
+
 if(string_trim(obj_budi.typedWord) == tugas_list[index_sekarang]){
 	index_sekarang += 1;
 	

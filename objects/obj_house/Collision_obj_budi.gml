@@ -25,10 +25,7 @@ if (global.jam_sekarang >= 18 || global.jam_sekarang <= 5)
 
     // --- 4. Matikan Timer ---
     obj_cycle_time.alarm[0] = -1;
-<<<<<<< HEAD
 	
 	global.waktu_qte_hari_ini = -1;
 	global.sudah_muncul_hari_ini = false;
-=======
->>>>>>> jvn/main
 }	

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 54A2060F
@@ -25,45 +24,6 @@
 /// @DnDArgument : "var_8" "global.popup_open"
 global.jam_sekarang = 6;
 global.hari += +1;
-=======
-/// @DnDAction : YoYo Games.Common.If_Variable
-/// @DnDVersion : 1
-/// @DnDHash : 6F33E4D7
-/// @DnDArgument : "var" "global.jam_sekarang"
-/// @DnDArgument : "op" "1"
-/// @DnDArgument : "value" "12"
-if(global.jam_sekarang < 12){	/// @DnDAction : YoYo Games.Common.Variable
-	/// @DnDVersion : 1
-	/// @DnDHash : 45E4D7BF
-	/// @DnDParent : 6F33E4D7
-	/// @DnDArgument : "expr" "+1"
-	/// @DnDArgument : "expr_relative" "1"
-	/// @DnDArgument : "var" "global.jam_sekarang"
-	global.jam_sekarang += +1;}
-
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 54A2060F
-/// @DnDInput : 8
-/// @DnDArgument : "expr" "6"
-/// @DnDArgument : "expr_2" "true"
-/// @DnDArgument : "expr_3" "+200"
-/// @DnDArgument : "expr_relative_3" "1"
-/// @DnDArgument : "expr_4" "1"
-/// @DnDArgument : "expr_5" "room_speed * 0.2"
-/// @DnDArgument : "expr_6" "+1"
-/// @DnDArgument : "expr_relative_6" "1"
-/// @DnDArgument : "expr_7" "false"
-/// @DnDArgument : "var" "global.jam_sekarang"
-/// @DnDArgument : "var_1" "global.menit_sekarang"
-/// @DnDArgument : "var_2" "global.hari_sudah_diupdate"
-/// @DnDArgument : "var_3" "obj_budi.y"
-/// @DnDArgument : "var_4" "obj_budi.spd"
-/// @DnDArgument : "var_5" "obj_cycle_time.alarm[0]"
-/// @DnDArgument : "var_6" "obj_growth.image_index"
-/// @DnDArgument : "var_7" "global.popup_open"
-global.jam_sekarang = 6;
->>>>>>> jvn/main
 global.menit_sekarang = 0;
 global.hari_sudah_diupdate = true;
 obj_budi.y += +200;
@@ -90,7 +50,7 @@ var fields = layer_get_all_elements(layer_id);
 /// @DnDVersion : 1
 /// @DnDHash : 547EEBA4
 /// @DnDArgument : "cond" "i < array_length(fields)"
-for(i = 0; i < array_length(fields); i += 1) {	/// @DnDAction : YoYo Games.Common.Temp_Variable
+for(i = 0; i < array_length(fields); i += 1) {	/// @DnDAction : YoYo Games.Common.Temp_Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 5D37FA33
 	/// @DnDParent : 547EEBA4
@@ -104,14 +64,14 @@ for(i = 0; i < array_length(fields); i += 1) {	/// @DnDAction : YoYo Games.Comm
 	/// @DnDParent : 547EEBA4
 	/// @DnDArgument : "var" "field.is_watered"
 	/// @DnDArgument : "value" "true"
-	if(field.is_watered == true){	/// @DnDAction : YoYo Games.Common.Variable
+	if(field.is_watered == true){	/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 20A38428
 		/// @DnDParent : 0E7AA570
 		/// @DnDArgument : "expr" "+1"
 		/// @DnDArgument : "expr_relative" "1"
 		/// @DnDArgument : "var" "field.image_index"
-		field.image_index += +1;}}
+		field.image_index += +1;}}
 
 /// @DnDAction : YoYo Games.Instances.Destroy_Instance
 /// @DnDVersion : 1
