@@ -1,5 +1,5 @@
 if (player_near) {
-    if (obj_budi.typedWord == "collect water") {
+    if (obj_budi.typedWord == "collect water" || obj_budi.typedWord == "collectwater") {
         if (global.tutorial_index == 0) {
 
             // Give water bucket
