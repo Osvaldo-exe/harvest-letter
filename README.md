@@ -1,3 +1,15 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/anomalystudio/harvest-letter/master/assets/logo.png" width="400" alt="Harvest Letter Logo">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/languages/top/anomalystudio/harvest-letter?style=for-the-badge&color=8B4513" alt="Top Language">
+  <img src="https://img.shields.io/github/repo-size/anomalystudio/harvest-letter?style=for-the-badge&color=228B22" alt="Repo Size">
+  <img src="https://img.shields.io/github/license/anomalystudio/harvest-letter?style=for-the-badge&color=DAA520" alt="License">
+</p>
+
+---
+
 # ⌨️ Harvest Letter
 
 **A cozy typing-based farming simulator 🌾**
